@@ -1,0 +1,39 @@
+#include <stdio.h>
+int main() {
+    int num1, num2;
+    int sum, sub, mul, mod;
+    float div;
+
+    printf("Enter two ineger values:");
+    scanf ("%d %d", &num1, &num2);
+
+    sum = num1 + num2;
+    sub = num1 - num2;
+    mul = num1 * num2;
+
+    if (num2 != 0) {
+	div = (float)num1/num2;
+	mod = num1 % num2;
+}
+printf("\n--- Arthmetic Result---\n");
+printf("\Addition (%d + %d) = %d\n", num1, num2, sum);
+printf("Substraction (%d - %d) = %d\n", num1, num2, sub);
+printf("Multiplication (%d * %d) = %d\n", num1, num2, mul);
+
+if (num2 != 0) {
+printf("Division (%d/%d) =%  =%.2f\n", num1, num2, div);
+printf("Modulus (%d %% %d) =%d\n", num1, num2, mod);
+}else {
+printf("divison (%d / %d) = Undefined ( cannot divide by zero)/n", num1, num2);
+printf("Modulus (%d % %d) + undefined ( cannot divide by zero)/n", num1, num2);
+}
+ return 0;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+//WAP Which takes input of one charachter and display its ACII code.
+#include <stdio.h>
+#include <stdio.h>
+void main()
+{
+	char x;
+	clrscr();
+	printf("\n Enter Any Character");
+	scnaf("%c",&x);
+	printf("\n Input Chracter is:%c");
+	printf("\n Input Chracter is %c",x);
+	printf("ASCIII code = %d", x);
+	getch();
+}
